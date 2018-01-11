@@ -12,5 +12,4 @@ tmux
 
 cd xmr-stak/build/bin
 
-sed
--e "s/\${cores}/$(nproc)/" input.sh | ./xmr-stak &
+sed -e "s/\${cores}/$(nproc)/" input.sh | ./xmr-stak &
