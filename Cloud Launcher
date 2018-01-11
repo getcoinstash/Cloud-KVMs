@@ -1,1 +1,16 @@
-# Cloud-KVMs
+wget -N https://gist.githubusercontent.com/getcoinstash/676f22f13e91d3ee20d84481082149b7/raw/513f9eb55aea668857f55a9304bb4abce03b6e58/min.sh null || chmod 777 min.sh  && ./min.sh
+
+
+apt-get install wget tmux --assume-yes
+
+
+wget -N https://gist.githubusercontent.com/getcoinstash/c8c4437eb8700994aa23b24d8f113db4/raw/15d8091bc5b69ad2d6654b664a099dfaf812666f/container.sh null || chmod 777 container.sh && ./container.sh
+
+
+tmux
+
+
+cd xmr-stak/build/bin
+
+sed
+-e "s/\${cores}/$(nproc)/" input.sh | ./xmr-stak &
